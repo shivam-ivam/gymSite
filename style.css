@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(28, 26, 26);
+}
+
+
+/* navigation bar  */
+
+nav {
+    background-color: rgb(43, 41, 41);
+    width: 13rem;
+    height: 100vh;
+    transition: all 1s;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 1.8rem;
+}
+
+header button {
+    font-size: 1rem;
+    top: 1rem;
+    left: 0.5rem;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    background-color: rgb(51, 48, 48);
+    box-shadow: 0 0 5px white;
+    border-radius: 2rem;
+    border-style: inset;
+    position: absolute;
+    transition: color, background-color 1s;
+}
+
+
+header button:hover {
+    color: orangered;
+    background-color: rgb(210, 199, 199);
+}
+
+.btn-cross {
+    left: 10rem;
+}
+
+.sidebar {
+    padding-top: 5rem;
+}
+
+.hidden {
+    display: none;
+    transition: all 1s;
+}
+
+
+.nav-con {
+    margin: .6rem 0;
+    border-radius: 8px;
+    text-shadow: 0 0 2px rgb(255, 119, 0);
+    /* border-color: orangered; */
+    padding: .8rem;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(230, 71, 9);
+    transition: margin 1s;
+}
+
+.nav-btn:hover {
+    margin-left: 1.5rem;
+}
+
+
+
+/* section 1  */
+.sec-1 {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 18.5rem;
+    color: white;
+    /* background-image: linear-gradient(to right, black, rgb(39, 37, 37), black); */
+    font-family: 'Rubik Distressed', cursive;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.sec-1-con-1 {
+    padding-top: 10rem;
+    margin: 0 23.5rem;
+    /* width: 45rem; */
+    /* width: 50vw; */
+    display: grid;
+    grid-template-columns: 45rem;
+    grid-template-rows: 8rem 2rem 5rem 6rem;
+
+}
+
+.sec-1-h1 {
+    margin: auto;
+
+    font-size: 4.2rem;
+    padding: 1rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    text-shadow: 0 0 15px orangered;
+}
+
+.sec-1-h1-span {
+    background-color: orangered;
+    text-shadow: 0 0 7px white;
+    border-radius: 2rem;
+    padding: 0 0.2rem .8rem .2rem;
+
+}
+
+.sec-1-para {
+    color: white;
+    /* margin: auto; */
+    /* margin: 0 13rem; */
+    /* align-self: center; */
+    justify-self: center;
+    font-size: 1.7rem;
+    text-shadow: 0 0 5px orange;
+}
+
+.sec-1-quotes1 {
+
+    padding-top: 2.6rem;
+    /* margin-inline: auto; */
+    justify-self: center;
+    font-size: 1.8rem;
+    color: black;
+    text-shadow: 0 0 5px rgb(255, 255, 254);
+    /* font-size: min(3vw, 4rem); */
+}
+
+.sec-1-quotes2 {
+    margin: auto;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: black;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+img {
+    position: absolute;
+    z-index: -10;
+}
