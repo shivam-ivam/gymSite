@@ -4,7 +4,7 @@ const nav = document.querySelector("nav");
 
 
 
-// cross button 
+// cross button
 cross_btn.addEventListener("click", function () {
     nav.classList.add("hidden");
     hamberg_btn.classList.remove("hidden");

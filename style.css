@@ -4,19 +4,25 @@
 }
 
 body {
-    background-color: rgb(28, 26, 26);
+    height: 200vh;
 }
 
+/* nav */
 
-/* navigation bar  */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
 nav {
+
     background-color: rgb(43, 41, 41);
     width: 13rem;
     height: 100vh;
     transition: all 1s;
     position: absolute;
-    z-index: 10;
+
 }
 
 
@@ -84,77 +90,188 @@ header button:hover {
 }
 
 
-
 /* section 1  */
+
 .sec-1 {
-    width: 100vw;
-    height: auto;
-    padding-bottom: 18.5rem;
+    /* background-image: url(./images/img2.jpg); */
+    background-image: url(https://i.pinimg.com/736x/1c/9e/29/1c9e2907f354c4ec2ea575e21cfb2343.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
-    /* background-image: linear-gradient(to right, black, rgb(39, 37, 37), black); */
-    font-family: 'Rubik Distressed', cursive;
-    font-family: 'Edu QLD Beginner', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 .sec-1-con-1 {
-    padding-top: 10rem;
-    margin: 0 23.5rem;
-    /* width: 45rem; */
-    /* width: 50vw; */
-    display: grid;
-    grid-template-columns: 45rem;
-    grid-template-rows: 8rem 2rem 5rem 6rem;
+    position: relative;
+    /* left: -20rem; */
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(138, 126, 122);
+    text-shadow: 0 0 1px white;
+    /* animation-name: sec-1-h1; */
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: ease-out;
 
+}
+
+@keyframes sec-1-h1 {
+    from {
+        position: relative;
+        left: -20rem;
+        transform: rotate(.1turn);
+    }
+
+    to {
+        transform: rotate(0turn);
+        left: 0rem;
+    }
 }
 
 .sec-1-h1 {
-    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 0 0 10px rgb(255, 120, 9);
+    padding-bottom: 1rem;
 
-    font-size: 4.2rem;
-    padding: 1rem;
-    font-family: 'Edu QLD Beginner', cursive;
-    text-shadow: 0 0 15px orangered;
 }
 
-.sec-1-h1-span {
-    background-color: orangered;
-    text-shadow: 0 0 7px white;
-    border-radius: 2rem;
-    padding: 0 0.2rem .8rem .2rem;
 
+.sec-1-h1-span {
+    color: white;
+    background-color: orangered;
+    border-radius: 2rem;
+    padding: 0 1rem .3rem 1rem;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .sec-1-para {
-    color: white;
-    /* margin: auto; */
-    /* margin: 0 13rem; */
-    /* align-self: center; */
-    justify-self: center;
-    font-size: 1.7rem;
-    text-shadow: 0 0 5px orange;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    color: orange;
+    text-shadow: 0 0 2px white;
 }
 
-.sec-1-quotes1 {
-
-    padding-top: 2.6rem;
-    /* margin-inline: auto; */
-    justify-self: center;
-    font-size: 1.8rem;
-    color: black;
-    text-shadow: 0 0 5px rgb(255, 255, 254);
-    /* font-size: min(3vw, 4rem); */
-}
-
-.sec-1-quotes2 {
-    margin: auto;
-    text-align: center;
-    font-size: 1.8rem;
-    line-height: 1;
-    color: black;
-    text-shadow: 0 0 5px rgb(255, 255, 255);
-}
-
-img {
+.sec-1-line1 {
     position: absolute;
-    z-index: -10;
+    left: 20vw;
+    height: 100vh;
+    width: 1px;
+    box-shadow: 5px 0px 5px rgb(255, 98, 1);
+}
+
+.sec-1-dot1 {
+    position: absolute;
+    top: 0;
+    background-color: orangered;
+    height: 20px;
+    width: 5px;
+    animation: sec-1-dot1 15s linear 0s infinite;
+    box-shadow: 5px 5px 10px rgb(255, 98, 1);
+}
+
+.sec-1-line2 {
+    position: absolute;
+    left: 40vw;
+    height: 100vh;
+    width: 1px;
+
+
+    box-shadow: 5px 0px 5px rgb(255, 98, 1);
+}
+
+.sec-1-dot2 {
+    position: absolute;
+    top: -5rem;
+    background-color: orangered;
+    height: 20px;
+    width: 5px;
+    animation: sec-1-dot1 15s linear 2s infinite;
+    box-shadow: 5px 5px 10px rgb(255, 98, 1);
+}
+
+.sec-1-line3 {
+    position: absolute;
+    left: 60vw;
+    height: 100vh;
+    width: 1px;
+
+
+    box-shadow: 5px 0px 5px rgb(255, 98, 1);
+}
+
+.sec-1-dot3 {
+    position: absolute;
+    top: -5rem;
+    background-color: orangered;
+    height: 20px;
+    width: 5px;
+    animation: sec-1-dot1 15s linear 4s infinite;
+    box-shadow: 5px 5px 10px rgb(255, 98, 1);
+}
+
+.sec-1-line4 {
+    position: absolute;
+    left: 80vw;
+    height: 100vh;
+    width: 1px;
+
+    box-shadow: 5px 0px 5px rgb(255, 98, 1);
+}
+
+.sec-1-dot4 {
+    position: absolute;
+    top: -5rem;
+    background-color: orangered;
+    height: 20px;
+    width: 5px;
+    animation: sec-1-dot1 15s linear 5s infinite;
+    box-shadow: 5px 5px 10px rgb(255, 98, 1);
+}
+
+@keyframes sec-1-dot1 {
+    0% {
+        top: 0
+    }
+
+    50% {
+        top: 97vh
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/* section1 buttons  */
+
+.sec-1-btn {
+    position: absolute;
+    top: 32rem;
+}
+
+.sec-1-btn .btn {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-inline: .5rem;
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(234, 71, 12);
+    color: white;
+}
+
+.sec-1-btn .btn:hover {
+    background-color: white;
+    color: orangered;
 }
