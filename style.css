@@ -256,8 +256,7 @@ header button:hover {
 /* section1 buttons  */
 
 .sec-1-btn {
-    position: absolute;
-    top: 70vh;
+    padding-top: 2rem;
 }
 
 .sec-1-btn .btn {
