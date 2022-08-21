@@ -639,6 +639,10 @@ header button:hover {
 
 /* section -6 contact page  */
 
+.contact-page {
+    position: fixed;
+}
+
 .contact-page .modal {
     width: 30rem;
     height: 35rem;
@@ -698,6 +702,7 @@ header button:hover {
 
     .contact-page h3 {
         font-size: 2rem;
+        margin-top: 4rem;
         padding: 2rem 4rem;
     }
 
@@ -708,6 +713,59 @@ header button:hover {
         margin-bottom: 5rem;
     }
 }
+
+
+
+/* section 7 */
+
+.sec-7 {
+    position: fixed;
+
+}
+
+.sec-7 h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sec-7 .modal {
+    font-size: 1rem;
+    width: 30rem;
+    height: 35rem;
+    border: none;
+    background-image: none;
+    background-color: rgb(230, 228, 228);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.con {
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.con:hover {
+    color: orangered;
+    background-color: white;
+}
+
+@media (max-width:650px) {
+    .sec-7 .modal {
+        font-size: .9rem;
+        width: 20rem;
+        height: 30rem;
+    }
+
+}
+
 
 .hidden {
     display: none;
